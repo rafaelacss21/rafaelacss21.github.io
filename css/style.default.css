@@ -95,6 +95,10 @@ section {
   background: #f5f5f5;
 }
 
+.bg-white {
+  background: #ffffff;
+}
+
 .dark-mask {
   position: absolute;
   top: 0;
@@ -185,11 +189,10 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 }
 
 .jumbotron {
-  background-image: url(../img/home.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.7;
-  background-attachment: fixed;
+  /* background: url(../img/home.jpg) fixed no-repeat center;
+  background-size: auto 100%; */
+  background-color: transparent;
+
 }
 
 .intro-section .logo, .intro-section p {
@@ -584,6 +587,12 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 */
 .form-control {
   margin-bottom: 20px;
+}
+.contact-section .title {
+  border-bottom: solid 1px #ffffff;
+  border-top: solid 1px #ffffff;
+  color: #ffffff;
+
 }
 
 /*
@@ -1147,10 +1156,10 @@ STYLE SWITCHER FOR DEMO
 }
 
 .btn-outline-primary {
-  color: #9055A2;
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border-color: #9055A2;
+  border-color: #ffffff;
 }
 
 .btn-outline-primary:hover {
@@ -2391,10 +2400,17 @@ code {
   } 
 }
 
-@media (max-width:640px) {
-jumbotron {
-    background-attachment:initial;
-    background-position: center center;
-    background-attachment: unset;
-  }
+body:after{
+  content:"";
+  position:fixed; /* stretch a fixed position to the whole screen */
+  top:0;
+  height:100vh; /* fix for mobile browser address bar appearing disappearing */
+  left:0;
+  right:0;
+  z-index:-1; /* needed to keep in the background */
+  background: url(../img/home.jpg) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
