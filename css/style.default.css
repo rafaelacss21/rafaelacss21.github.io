@@ -2392,7 +2392,7 @@ code {
 }
 
 @media (max-width:640px) {
-  section {
+jumbotron {
     background-attachment:initial;
   }
 }
