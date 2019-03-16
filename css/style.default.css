@@ -2394,5 +2394,7 @@ code {
 @media (max-width:640px) {
 jumbotron {
     background-attachment:initial;
+    background-position: center center;
+    background-attachment: unset;
   }
 }
