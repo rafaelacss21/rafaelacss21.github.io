@@ -736,6 +736,7 @@ STYLE SWITCHER FOR DEMO
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 0rem;
+  color: #9A49B3;
 }
 
 .navbar-light .navbar-brand {
@@ -817,6 +818,7 @@ STYLE SWITCHER FOR DEMO
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5);
 }
+
 
 /*
  * 2. BUTTONS
@@ -1157,12 +1159,27 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-primary {
   color: #ffffff;
+  background-color: #9055A2;
+  background-image: none;
+  border-color: #9055A2;
+}
+
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #ad77bd;
+  border-color: #ad77bd;
+}
+
+.btn-trans{
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
   border-color: #ffffff;
 }
 
-.btn-outline-primary:hover {
+
+.btn-trans:hover {
   color: #fff;
   background-color: #9055A2;
   border-color: #9055A2;
@@ -1471,6 +1488,21 @@ body {
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
+}
+
+body:after{
+  content:"";
+  position:fixed; 
+  top:0;
+  height:100vh; 
+  left:0;
+  right:0;
+  z-index:-1;
+  background: url(../img/home.jpg) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
@@ -2400,17 +2432,3 @@ code {
   } 
 }
 
-body:after{
-  content:"";
-  position:fixed; /* stretch a fixed position to the whole screen */
-  top:0;
-  height:100vh; /* fix for mobile browser address bar appearing disappearing */
-  left:0;
-  right:0;
-  z-index:-1; /* needed to keep in the background */
-  background: url(../img/home.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
