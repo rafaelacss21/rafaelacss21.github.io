@@ -12,8 +12,11 @@
     <!-- Font Awesome CSS-->
     <link
       rel="stylesheet"
-      href="vendor/font-awesome/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
     />
+
     <!-- Google fonts - Roboto + Roboto Slab-->
     <link
       rel="stylesheet"
@@ -29,8 +32,6 @@
     <link rel="stylesheet" href="vendor/animate.css/animate.css" />
     <!-- default stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet" />
-    <!-- Leaflet CSS - For the map
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css"> -->
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- Tweaks for older IEs-->
@@ -485,8 +486,8 @@
           </div>
           <ul id="filter" data-animate="fadeInUp">
             <li class="active"><a href="#" data-filter="all">All</a></li>
-            <li><a href="#" data-filter="webdesign">MEAN Stack</a></li>
-            <li><a href="#" data-filter="seo">.NET Stack</a></li>
+            <li><a href="#" data-filter="webdesign">Front-End</a></li>
+            <li><a href="#" data-filter="seo">Full-Stack</a></li>
             <li><a href="#" data-filter="other">Others</a></li>
           </ul>
           <div id="detail">
@@ -507,10 +508,7 @@
           <!-- ================= -->
           <div id="references-masonry" data-animate="fadeInUp">
             <div class="row">
-              <div
-                data-category="webdesign"
-                class="reference-item col-lg-3 col-md-6"
-              >
+              <div data-category="seo" class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#"
                     ><img src="img/portfolio-1.jpg" alt="" class="img-fluid" />
@@ -565,10 +563,7 @@
                 </div>
               </div>
 
-              <div
-                data-category="webdesign"
-                class="reference-item col-lg-3 col-md-6"
-              >
+              <div data-category="seo" class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#"
                     ><img src="img/portfolio-2.jpg" alt="" class="img-fluid" />
@@ -672,21 +667,17 @@
                 </div>
               </div>
 
-              <div
-                data-category="webdesign"
-                class="reference-item col-lg-3 col-md-6"
-              >
+              <!-- single project -->
+              <div data-category="seo" class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#"
                     ><img src="img/portfolio-4.jpg" alt="" class="img-fluid" />
                     <div class="overlay">
                       <div class="inner">
                         <h3 class="h4 reference-title">Vênus Makeup</h3>
-                        <!-- <p>Short project description goes here...</p> -->
                       </div>
                     </div></a
                   >
-                  <!-- <div data-images="img/venusmakeup.mp4" class="sr-only reference-description"> -->
                   <div
                     data-images="img/venusmakeup.mp4"
                     class="sr-only reference-description"
@@ -699,28 +690,113 @@
                     </video>
                     <br />
                     <p>
-                      Vênus Makeup is an e-commerce website developed to
-                      increase the sales of the company.
+                      Vênus Makeup is a store specialized on high end makeup and
+                      cosmetic products.
+                    </p>
+                    <p>
+                      This e-commerce website was developed to increase the
+                      sales of the company and facilitate customer's access.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <!-- <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/portfolio-5.jpg" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Project name 5</h3>
-                            <p>Short project description goes here...</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
-                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+              <!-- single project -->
+              <div
+                data-category="webdesign"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img src="img/portfolio-5.jpg" alt="" class="img-fluid" />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">Legendary Cars</h3>
+                      </div>
+                    </div></a
+                  >
+                  <div
+                    data-images="img/main-slider5.1.jpg,img/main-slider5.2.jpg,img/main-slider5.3.jpg,img/main-slider5.4.jpg,img/main-slider5.5.jpg,img/main-slider5.6.jpg"
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      Legendary Cars is a website created as a template for a
+                      Car Dealership. It has sections that show the shop
+                      information, a list of available cars, customer's
+                      testimonials, as well as contact form.
+                    </p>
+                    <p>
+                      Legendary Cars is a simple Front-End application built
+                      from scratch using the following technologies:
+                    </p>
+                    <p>
+                      HTML5, CSS3, SASS, JavaScript, jQuery, and Bootstrap4. The
+                      application was source versioned with GIT and hosted on
+                      GitHub.
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="https://rafaelacss21.github.io/legendarycars/"
+                        class="btn btn-outline-primary"
+                        ><i class="fab fa-chrome"></i> Visit website</a
+                      ><a
+                        href="https://github.com/rafaelacss21/legendarycars"
+                        class="btn btn-outline-primary"
+                        ><i class="fab fa-github"></i> Check on GitHub</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- single project -->
+              <div
+                data-category="webdesign"
+                class="reference-item col-lg-3 col-md-6"
+              >
+                <div class="reference">
+                  <a href="#"
+                    ><img src="img/portfolio-6.jpg" alt="" class="img-fluid" />
+                    <div class="overlay">
+                      <div class="inner">
+                        <h3 class="h4 reference-title">Furnifuture</h3>
                       </div>
                     </div>
-                  </div> -->
+                  </a>
+                  <div
+                    data-images="img/main-slider6.1.jpg,img/main-slider6.2.jpg,img/main-slider6.3.jpg,img/main-slider6.4.jpg"
+                    class="sr-only reference-description"
+                  >
+                    <p>
+                      Furnifuture is a website created as a template for an
+                      e-commerce of a Furniture store. You can add products to
+                      the cart, visualize the cart with all the products and
+                      total price. You can also delete items from the cart and
+                      the total price will automatically be recalculated.
+                    </p>
+                    <p>
+                      Furnifuture is a simple Front-End application built from
+                      scratch using the following technologies:
+                    </p>
+                    <p>
+                      HTML5, CSS3, JavaScript, jQuery, and Bootstrap4. The
+                      application was source versioned with GIT and hosted on
+                      GitHub.
+                    </p>
+                    <p class="buttons text-center">
+                      <a
+                        href="https://rafaelacss21.github.io/furnifuture/"
+                        class="btn btn-outline-primary"
+                        ><i class="fab fa-chrome"></i> Visit website</a
+                      ><a
+                        href="https://github.com/rafaelacss21/furnifuture"
+                        class="btn btn-outline-primary"
+                        ><i class="fab fa-github"></i> Check on GitHub</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -809,13 +885,13 @@
               <a
                 href="https://www.facebook.com/rafaela.stehling"
                 class="external facebook wow fadeInUp"
-                ><i class="fa fa-facebook"></i
+                ><i class="fab fa-facebook"></i
               ></a>
               <a
                 href="https://github.com/rafaelacss21"
                 data-wow-delay="0.6s"
                 class="external github wow fadeInUp"
-                ><i class="fa fa-github" aria-hidden="true"></i
+                ><i class="fab fa-github" aria-hidden="true"></i
               ></a>
               <a
                 href="mailto:rafaelacss21@gmail.com?Subject=Portfolio%20Contact"
